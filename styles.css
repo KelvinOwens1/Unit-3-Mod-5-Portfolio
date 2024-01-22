@@ -439,7 +439,7 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     padding: .5rem 1.5rem;
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: ;
@@ -466,30 +466,21 @@ span {
 
 .skills-content .progress {
     padding: 1rem 0;
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; */
+    align-items: center;
 }
 
 
 .skills-content .progress h3 {
     font-size: 2rem;
-    display: flex;
-    justify-content: space-between;
-    /* padding-right: 200px; */
+    padding: 3rem 3rem;
 }
 
-.skills-content .progress span {
-    /* padding-right: 200px; */
+.skills-content .progress h3 i {
+    font-size: 5rem;
 }
-
-/* .skills-content .progress h3 span {
-    color: var(--text-color);
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-} */
 
 /* End Skills */
 
