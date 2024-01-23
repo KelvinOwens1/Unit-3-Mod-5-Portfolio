@@ -113,7 +113,7 @@ section {
 
 .home-content .text-animate {
     position: relative;
-    width: 40rem;
+    width: 34.5rem;
 }
 
 .home-content .text-animate h3 {
@@ -124,7 +124,8 @@ section {
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: -40rem 0;
+    background-clip: text;
+    background-position: -33rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
 
@@ -146,6 +147,10 @@ section {
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
+}
+
+.home-content p a {
+    color: var(--main-color);
 }
 
 .btn-box {
@@ -331,7 +336,7 @@ span {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
 }
 
@@ -344,6 +349,10 @@ span {
     text-align: justify;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+}
+
+.about-content p a {
+    color: var(--main-color);
 }
 
 .btn-box.btns {
@@ -484,10 +493,18 @@ span {
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: center;
     align-items: center;
     z-index: 1;
     overflow: hidden;
+}
+
+.progress .png {
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
 }
 
 .skills-box .skills-content::before {
@@ -508,16 +525,17 @@ span {
 
 .skills-content .progress {
     padding: 1rem 0;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
+    border-bottom: .2rem solid var(--main-color);
 }
 
 
 .skills-content .progress h3 {
     font-size: 2rem;
-    padding: 3rem 3rem;
+    padding: 1rem 1rem;
 }
 
 .skills-content .progress h3 i {
@@ -830,7 +848,7 @@ span {
 
 @keyframes homeBgText {
     0%, 10%, 100% {
-        background-position: -40rem 0;
+        background-position: -34.5rem 0;
     }
 
     65%, 85% {
@@ -843,7 +861,7 @@ span {
         width: 0;
     }
 
-    65%, 78, 85% {
+    65%, 78%, 85% {
         width: 100%;
         opacity: 1;
     }
