@@ -89,6 +89,28 @@ body {
 }
 /* Navbar End */
 
+/* Social Start */
+.social {
+    position: relative;
+}
+
+.social a {
+    font-size: 2.5rem;
+    color: var(--text1-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.social a:hover,
+.social a.active, 
+.social .animate {
+    color: var(--link1-color);
+    animation: animate 1s ease-in-out infinite alternate;
+}
+/* Social End */
+
 section {
     min-height: 100vh;
     padding: 10rem 10% 2rem;
@@ -99,9 +121,15 @@ section {
 .home {
     background: var(--bg-color);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     color: var(--text1-color);
+}
+
+.home-img {
+    margin-left: -5rem;
+    margin-right: 10rem;
 }
 
 .home-content {
@@ -110,7 +138,7 @@ section {
 }
 
 .home-content h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -149,21 +177,28 @@ section {
 .about-content {
     max-width: 100rem;
     z-index: 99;
+    line-height: 3rem;
+    background: var(--bg-color);
+    color: var(--text1-color);
+    padding: 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
 }
 
 .about .heading {
     font-size: 3rem;
-    padding-bottom: 1.5rem;
+    margin: 5rem;
 }
 
 .about-content h1{
     font-size: 2rem;
+    font-weight: 700;
     margin-bottom: -.5rem;
 }
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 1rem 0 2.5rem;
+    margin: 1rem 0 3rem;
 }
 
 .about-content a {
@@ -203,12 +238,15 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     /* width: 30%; */
     border-radius: 5rem;
     box-shadow: 0 1rem 2.5rem 0 rgba(0,0,0,0.5);
     transition: 0.3s;
     margin-bottom: 7rem;
+}
+
+.card .container {
+    background: var(--second-bg-color);
 }
 
 .card a {
@@ -221,8 +259,10 @@ section {
 
 .card img {
     border-radius: 5rem 5rem 0 0;
+    top: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .card h4 {
@@ -266,17 +306,18 @@ section {
 
 .skills .heading {
     font-size: 4rem;
-    padding-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 
 .skills-content, .tools-content {
     width: 90%;
     display: inline-flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
+    margin-bottom: 5rem;
+
 }
 
 .skills-content .content, .tools-content .content {
@@ -304,9 +345,9 @@ section {
 /* Skills End */
 
 /* Contact Start */
-.contact {
+/* .contact {
     background: var(--bg-color);
-}
+} */
 /* Contact End */
 
 /* Footer Start */
@@ -316,7 +357,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
