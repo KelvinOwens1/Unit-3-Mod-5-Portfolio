@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+      integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/letter-k-green.png"
+      type="image/x-icon"
+    />
+    <script src="scripts/index.js"></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <a href="#" class="logo">Kelvin Owens</a>
+
+      <input type="checkbox" id="check" />
+      <label for="check" class="menu-icon">
+        <i class="bx bx-menu" id="menu-font"></i>
+        <i class="bx bx-x" id="close-font"></i>
+      </label>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="active" style="--i: 0">Home</a>
+        <a href="#about" style="--i: 1">About</a>
+        <a href="#projects" style="--i: 2">Projects</a>
+        <a href="#skills" style="--i: 3">Skills</a>
+        <!-- <a href="#contact">Contact</a> -->
+        <a
+          class="animate"
+          href="images/kelvinowens-resume.pdf"
+          style="--i: 4"
+          target="_blank"
+          >Resume</a
+        >
+      </nav>
+
+      <div class="social" id="social">
+        <a href="https://www.facebook.com/kelvin.owens2" target="_blank"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/kelvinowens/" target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://github.com/KelvinOwens1" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="mailto:kelvin.owens@gmail.com" target="_blank"
+          ><i class="bx bxs-envelope"></i
+        ></a>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      
+    </section>
+
+    <section class="about" id="about"></section>
+
+    <section class="projects" id="projects"></section>
+
+    <section class="skills" id="skills"></section>
+
+    <div class="back-to-top menu animate" id="back-to-top">
+      <ul>
+        <li><a href="#home" class="active" style="--i: 0">Home</a></li>
+        <li><a href="#about" style="--i: 1">About</a></li>
+        <li><a href="#projects" style="--i: 2">Projects</a></li>
+        <li><a href="#skills" style="--i: 3">Skills</a></li>
+      </ul>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <a href="javascript:void(0);" class="icon" onclick="myLinksView()">
+        <span class="back-to-top open">
+          <i class="bx bx-menu" id="menu-font"></i>
+          <i class="bx bx-x" id="close-font"></i>
+        </span>
+      </a>
+    </div>
+
+    <!-- Footer Design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          <span>Kelvin Owens -</span>
+          <span
+            ><a class="email" href="mailto:kelvin.owens@gmail.com">
+              kelvin.owens@gmail.com</a
+            ></span
+          >
+          - <span id="curYear"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+  <script>
+    var date = new Date();
+    var year = date.getFullYear();
+    document.getElementById("curYear").innerHTML = year;
+  </script>
+</html>
