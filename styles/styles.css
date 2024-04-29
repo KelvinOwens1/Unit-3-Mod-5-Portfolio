@@ -359,6 +359,29 @@ section {
     font-size: 1.5rem;
     padding-top: 2rem;
 }
+
+
+.certs-content {
+    max-width: 100rem;
+    z-index: 99;
+    line-height: 3rem;
+    /* background: var(--bg-color); */
+    color: var(--text1-color);
+    padding: 5rem;
+    border-radius: 5rem;
+    margin-bottom: 5rem;
+}
+
+.certs-content p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+.certs-content a {
+    color: var(--text1-color);
+    /* text-shadow: 0 0 .75rem var(--text-shadow); */
+}
+
 /* Skills End */
 
 /* Contact Start */
@@ -381,6 +404,7 @@ section {
     padding: 2rem 9%;
     background: var(--second-bg-color);
     z-index: 99;
+    border-top: .1rem solid #000000;
 }
 
 .footer-text p {
